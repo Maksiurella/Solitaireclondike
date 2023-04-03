@@ -1,17 +1,56 @@
 #include <iostream>
+#include <iomanip>
+#include <ctime>
+#include <vector>
+#include <queue>
+#include <stack>
 
-class game {
+using namespace std;
 
-char hearts = 'h'; //kier
-char spades = 's'; //pik
-char diamond = 'd'; //karo
-char club = 'c'; //trefl
+const int MAX_C = 52;
 
-
-
-};
-
-int main()
+struct Card;
 {
-    std::cout << "C++";
-}
+    int Value, Suit, color; //wartosc karty, kolor, i czerwona czy czarna
+    string DescriptionCard;
+
+    
+    Card Card(int s; int v){
+        Suit = s;
+        Value = v;
+        switch(Value)
+        {
+            case 1:
+            DescriptionCard += "A";
+            break;
+            case 11:
+            DescriptionCard += "J";
+            break;
+            case 12:
+            DescriptionCard += "Q";
+            break;
+            case 13:
+            DescriptionCard += "K";
+            break;
+            default:
+            char T, N;
+             
+             T = ('0' + Value / 10);
+             N = ('0' + Value % 10);
+
+             if(Value / 10)
+                DesciptionCard = DescriptionCard + T;
+
+                DescriptionCard += N;
+        }
+
+        
+
+            
+
+        }
+        
+
+
+    }
+    
