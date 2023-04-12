@@ -165,7 +165,7 @@ void Gameplay::menu() {
         line();
         num2();
         WinCondition();
-
+		cout<<endl;
         cin >> ChoiceNumber0 >> ChosenCard >> ChoiceNumber1;
 
         if (ChoiceNumber0 == 0)
@@ -574,13 +574,13 @@ void Gameplay::errors(int n) {
         cout << "!!! Do pustej kolumny mozna wstawic tylko krola lub zestaw kart na ktorych czele znajduje sie krol. Sprobuj ponownie: " << endl;
         break;
     case 3:
-        cout << "!!! Podano zle dane Sprobuj ponownie." << endl;
+        cout << "!!! Podano zle dane. Sprobuj ponownie:" << endl;
         break;
     case 4:
-        cout << "!!! Kolejka jest pusta" << endl;
+        cout << "!!! Kolejka jest pusta. Sprobuj ponownie:" << endl;
         break;
     case 5:
-        cout << "!!! Karty nie roznia sie kolorem lub nie jest o jeden nizsza!" << endl;
+        cout << "!!! Karty nie roznia sie kolorem lub nie jest o jeden nizsza. Sprobuj ponownie:" << endl;
         break;
     case 6:
         cout << "!!! Do pustej kolumny mozna wstawic tylko krola lub zestaw kart na ktorych czele znajduje sie krol." << endl;
@@ -589,7 +589,7 @@ void Gameplay::errors(int n) {
         cout << "!!! Zagrano zla karte. Sprobuj pownownie:" << endl;
         break;
     case 8:
-        cout << "!!! Na koncu wektora musi znajdowac sie as!" << endl;
+        cout << "!!! Na koncu wektora musi znajdowac sie as. Sprobuj ponownie:" << endl;
         break;
     }
 }
