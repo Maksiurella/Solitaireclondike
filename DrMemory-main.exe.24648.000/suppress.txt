@@ -1,0 +1,74 @@
+# File for suppressing errors found in pid 24648: "main.exe"
+
+# Suppression for Error #1
+UNINITIALIZED READ
+name=Error #1 (update to meaningful name)
+KERNELBASE.dll!FindNextFileW
+KERNELBASE.dll!FindNextFileA
+main.exe!.text
+main.exe!__mingw_glob
+main.exe!_setargv
+main.exe!.text
+main.exe!mainCRTStartup
+ntdll.dll!__RtlUserThreadStart
+
+## Mod+offs-style suppression for Error #1:
+UNINITIALIZED READ
+name=Error #1 (update to meaningful name)
+<KERNELBASE.dll+0x11e4ce>
+<KERNELBASE.dll+0x207694>
+<main.exe+0x624a>
+<main.exe+0x5c52>
+<main.exe+0x4396>
+<main.exe+0x1202>
+<main.exe+0x12f5>
+<ntdll.dll+0x6b74b>
+
+# Suppression for Error #2
+UNINITIALIZED READ
+name=Error #2 (update to meaningful name)
+KERNELBASE.dll!FindNextFileW
+KERNELBASE.dll!FindNextFileA
+main.exe!.text
+main.exe!__mingw_glob
+main.exe!_setargv
+main.exe!.text
+main.exe!mainCRTStartup
+ntdll.dll!__RtlUserThreadStart
+
+## Mod+offs-style suppression for Error #2:
+UNINITIALIZED READ
+name=Error #2 (update to meaningful name)
+<KERNELBASE.dll+0x11e4fb>
+<KERNELBASE.dll+0x207694>
+<main.exe+0x624a>
+<main.exe+0x5c52>
+<main.exe+0x4396>
+<main.exe+0x1202>
+<main.exe+0x12f5>
+<ntdll.dll+0x6b74b>
+
+# Suppression for Error #3
+UNINITIALIZED READ
+name=Error #3 (update to meaningful name)
+KERNELBASE.dll!FindNextFileW
+KERNELBASE.dll!FindNextFileA
+main.exe!.text
+main.exe!__mingw_glob
+main.exe!_setargv
+main.exe!.text
+main.exe!mainCRTStartup
+ntdll.dll!__RtlUserThreadStart
+
+## Mod+offs-style suppression for Error #3:
+UNINITIALIZED READ
+name=Error #3 (update to meaningful name)
+<KERNELBASE.dll+0x11e427>
+<KERNELBASE.dll+0x207694>
+<main.exe+0x624a>
+<main.exe+0x5c52>
+<main.exe+0x4396>
+<main.exe+0x1202>
+<main.exe+0x12f5>
+<ntdll.dll+0x6b74b>
+

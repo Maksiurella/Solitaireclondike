@@ -1,0 +1,2 @@
+C:\WINDOWS\System32\msvcrt.dll
+C:\MinGW\bin\libstdc++-6.dll

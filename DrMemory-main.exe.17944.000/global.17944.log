@@ -1,0 +1,5 @@
+Dr. Memory version 2.5.0 build 0 built on Oct 18 2021 03:10:43
+start time: 3701610:48:46.623 == 18:48:46.623 04/12/2023
+Recorded 124 suppression(s) from default C:\Program Files (x86)\Dr. Memory\bin\suppress-default.txt
+Syscall mismatch detected.  Running on unknown kernel version!
+System call information is missing for this operating system: WinVer=105;Rel=2009;Build=22621;Edition=Enterprise. Restarting to trigger auto-generation of system call information. Re-run with -ignore_kernel to attempt to continue instead.

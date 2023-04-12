@@ -1,0 +1,79 @@
+Dr. Memory version 2.5.0 build 0 built on Oct 18 2021 03:10:43
+start time: 3701610:49:39.103 == 18:49:39.103 04/12/2023
+Recorded 124 suppression(s) from default C:\Program Files (x86)\Dr. Memory\bin\suppress-default.txt
+Using system call file C:\Users\maksy\OneDrive\Pulpit\projekt2\symcache\syscalls_wow64.txt
+Syscall mismatch detected.  Running on unknown kernel version!
+new thread #0 id=8528
+
+module load event: "main.exe" 0x00400000-0x00445000 modid: 1 C:\Users\maksy\OneDrive\Pulpit\projekt2\main.exe
+
+module load event: "dynamorio.dll" 0x532d0000-0x53441000 modid: 2 C:\Program Files (x86)\Dr. Memory\dynamorio\lib32\release\dynamorio.dll
+
+module load event: "libgcc_s_dw2-1.dll" 0x6eb40000-0x6ec1d000 modid: 3 C:\MinGW\bin\libgcc_s_dw2-1.dll
+
+module load event: "libstdc++-6.dll" 0x6fe40000-0x6ffb4000 modid: 4 C:\MinGW\bin\libstdc++-6.dll
+
+module load event: "drmemorylib.dll" 0x73800000-0x73a4b000 modid: 5 C:\Program Files (x86)\Dr. Memory\bin\release\drmemorylib.dll
+
+module load event: "msvcrt.dll" 0x755f0000-0x756b4000 modid: 6 C:\WINDOWS\System32\msvcrt.dll
+WARNING: unable to load symbols for C:\WINDOWS\System32\msvcrt.dll
+WARNING: new/delete has no local wrapper => disabling mismatch detection for msvcrt.dll
+WARNING: new/delete has no local wrapper => disabling mismatch detection for msvcrt.dll
+WARNING: new/delete has no local wrapper => disabling mismatch detection for msvcrt.dll
+WARNING: new == new[] => disabling mismatch detection for msvcrt.dll
+WARNING: new/delete has no local wrapper => disabling mismatch detection for msvcrt.dll
+WARNING: new/delete has no local wrapper => disabling mismatch detection for msvcrt.dll
+
+module load event: "KERNEL32.dll" 0x77190000-0x77280000 modid: 7 C:\WINDOWS\System32\KERNEL32.DLL
+
+module load event: "KERNELBASE.dll" 0x774f0000-0x7775a000 modid: 8 C:\WINDOWS\System32\KERNELBASE.dll
+
+module load event: "ntdll.dll" 0x77860000-0x77a0f000 modid: 9 C:\WINDOWS\SYSTEM32\ntdll.dll
+WARNING: unhandled system calls found
+
+NEW THREAD: main thread 8528
+
+
+Error #1: UNINITIALIZED READ: reading register eax
+# 0 KERNELBASE.dll!FindNextFileW  (0x7760e4ce <KERNELBASE.dll+0x11e4ce>) modid:8
+# 1 KERNELBASE.dll!FindNextFileA  (0x776f7694 <KERNELBASE.dll+0x207694>) modid:8
+# 2 .text    [C:/Users/maksy/OneDrive/Pulpit/projekt2/main.cpp:612] (0x0040624a <main.exe+0x624a>) modid:1
+# 3 __mingw_glob [C:/Users/maksy/OneDrive/Pulpit/projekt2/main.cpp:612] (0x00405c52 <main.exe+0x5c52>) modid:1
+# 4 _setargv [C:/Users/maksy/OneDrive/Pulpit/projekt2/main.cpp:612] (0x00404396 <main.exe+0x4396>) modid:1
+# 5 .text    (0x00401202 <main.exe+0x1202>) modid:1
+# 6 mainCRTStartup (0x004012f5 <main.exe+0x12f5>) modid:1
+# 7 ntdll.dll!__RtlUserThreadStart (0x778cb74b <ntdll.dll+0x6b74b>) modid:9
+Note: @0:00:00.935 in thread 8528
+Note: instruction: cmp    %eax $0x0000001a
+	error end
+
+Error #2: UNINITIALIZED READ: reading register eax
+# 0 KERNELBASE.dll!FindNextFileW  (0x7760e4fb <KERNELBASE.dll+0x11e4fb>) modid:8
+# 1 KERNELBASE.dll!FindNextFileA  (0x776f7694 <KERNELBASE.dll+0x207694>) modid:8
+# 2 .text    [C:/Users/maksy/OneDrive/Pulpit/projekt2/main.cpp:612] (0x0040624a <main.exe+0x624a>) modid:1
+# 3 __mingw_glob [C:/Users/maksy/OneDrive/Pulpit/projekt2/main.cpp:612] (0x00405c52 <main.exe+0x5c52>) modid:1
+# 4 _setargv [C:/Users/maksy/OneDrive/Pulpit/projekt2/main.cpp:612] (0x00404396 <main.exe+0x4396>) modid:1
+# 5 .text    (0x00401202 <main.exe+0x1202>) modid:1
+# 6 mainCRTStartup (0x004012f5 <main.exe+0x12f5>) modid:1
+# 7 ntdll.dll!__RtlUserThreadStart (0x778cb74b <ntdll.dll+0x6b74b>) modid:9
+Note: @0:00:00.939 in thread 8528
+Note: instruction: data16 mov    %cx -> 0x00000234(%ebx,%eax,2)
+	error end
+
+Error #3: UNINITIALIZED READ: reading register eax
+# 0 KERNELBASE.dll!FindNextFileW  (0x7760e427 <KERNELBASE.dll+0x11e427>) modid:8
+# 1 KERNELBASE.dll!FindNextFileA  (0x776f7694 <KERNELBASE.dll+0x207694>) modid:8
+# 2 .text    [C:/Users/maksy/OneDrive/Pulpit/projekt2/main.cpp:612] (0x0040624a <main.exe+0x624a>) modid:1
+# 3 __mingw_glob [C:/Users/maksy/OneDrive/Pulpit/projekt2/main.cpp:612] (0x00405c52 <main.exe+0x5c52>) modid:1
+# 4 _setargv [C:/Users/maksy/OneDrive/Pulpit/projekt2/main.cpp:612] (0x00404396 <main.exe+0x4396>) modid:1
+# 5 .text    (0x00401202 <main.exe+0x1202>) modid:1
+# 6 mainCRTStartup (0x004012f5 <main.exe+0x12f5>) modid:1
+# 7 ntdll.dll!__RtlUserThreadStart (0x778cb74b <ntdll.dll+0x6b74b>) modid:9
+Note: @0:00:00.952 in thread 8528
+Note: instruction: test   %eax %eax
+	error end
+WARNING: unable to load symbols for C:\MinGW\bin\libstdc++-6.dll
+new thread #1 id=24688
+new thread #2 id=24148
+new thread #3 id=4628
+new thread #4 id=24220

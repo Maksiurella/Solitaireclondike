@@ -1,0 +1,15 @@
+Dr. Memory symbol cache version 16
+       385,350142,0,0,408277,1681323730,282624
+1
+__acrt_heap,0x0
+operator delete,0x3fe8
+std::_DebugHeapDelete<>,0x0
+Concurrency::details::Security::EncodePointer,0x0
+operator delete[] nothrow,0x0
+operator delete[],0x0
+operator delete nothrow,0x0
+operator new nothrow,0x0
+operator new,0x3fe0
+operator new[] nothrow,0x0
+operator new[],0x0
+_crtheap,0x0
